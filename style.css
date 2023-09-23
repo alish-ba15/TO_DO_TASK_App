@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=PT+Serif:ital,wght@1,700&family=Poppins&display=swap');
+
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-size: 40px;
+    font-weight: 900 !important;
+
+}
+
+
+.card {
+    position: relative;
+    width: 30%;
+    margin-top: 10%;
+    border-radius: 30px;
+    background: #f8c1c1;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+button {
+    margin-left: 12%;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+input {
+    margin-left: 0%;
+    flex: 2;
+    border: none;
+    outline: none;
+    background: #333;
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-weight: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+button:hover {
+    background: #78787a;
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    background: #98aeb6;
+    margin: 15px 0px 10px -35px;
+    padding: 10px 10px 10px 45px;
+    min-height: 10px;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 2px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    background: #333;
+    border-radius: 50%;
+}
+
+ul li .close {
+    position: absolute;
+    right: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #333;
+    border-radius: 50%;
+}
+
+ul li .close:hover {
+    background: #78787a;
+
+}
+
+ul li .close::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+ul li .close::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(-45deg);
+}
+
+ul li .edit {
+    position: absolute;
+    right: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 25px;
+    background: #333;
+    border-radius: 10px;
+}
+
+ul li .edit:hover {
+    background: #78787a;
+
+}
+
+.checked {
+    color: #fff;
+    background: #965a6c;
+    ;
+    text-decoration: none;
+}
+
+.checked::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    width: 16px;
+    height: 7px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(315deg);
+}
