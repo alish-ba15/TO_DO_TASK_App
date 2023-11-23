@@ -1,6 +1,6 @@
 const input = document.getElementById("input");
 const list = document.getElementById("list");
-
+var dateWrite = document.getElementById("date")
 
 
 function addTask() {
@@ -59,3 +59,14 @@ function displayData() {
     list.innerHTML = localStorage.getItem("data");
 }
 displayData();
+
+
+function date(){
+ var dated = new Date();
+ var todayDate= `${dated.getDate()}-${dated.getMonth()+1}-${dated.getFullYear()}`
+ dateWrite.innerHTML = todayDate;
+ console.log("🚀 ~ file: script.js:68 ~ date ~ todayDate:", todayDate)
+}
+date()
+
+

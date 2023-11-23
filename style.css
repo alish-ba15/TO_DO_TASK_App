@@ -2,75 +2,90 @@
 
 
 body {
-    background-color: #333;
+    background: linear-gradient(to right,grey,purple,grey);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff !important;
+    flex-shrink: inherit;
 }
 
 h1 {
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: -5px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900 !important;
+    color: violet !important;
 
+}
+
+#date{
+    color: plum !important;
+    margin-left: 76%;
+    margin-top: -4%;
+    margin-bottom: 1%;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 
 .card {
     position: relative;
-    width: 30%;
-    margin-top: 10%;
+    width: 60%;
+    margin-top: 15%;
     border-radius: 30px;
-    background: #f8c1c1;
-
+    background: #000;
+    color: #fff !important;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     border: none;
     outline: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 
 button {
-    margin-left: 12%;
+    margin-left: 9%;
     border: none;
-    outline: none;
+    outline: #000;
     padding: 10px 25px;
-    background: #333;
+    background: linear-gradient(to left,pink,purple);
     color: #fff;
     cursor: pointer;
-    border-radius: 40px;
-    font-weight: 500;
+    border-radius: 20px;
+    font-weight: 900;
 }
 
 input {
-    margin-left: 0%;
+    color: #fff !important;
+    width: 70%;
+    margin-left: 5%;
     flex: 2;
     border: none;
-    outline: none;
-    background: #333;
+    outline: #000;
+    background: linear-gradient(to left,pink,purple);
+    /* caret-color: #fff; */
     border-radius: 40px;
     padding: 10px 30px;
     font-weight: 16px;
-    color: #fff;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 button:hover {
-    background: #78787a;
+    background: purple;
 }
 
 li {
+    width: 94%;
     position: relative;
     display: flex;
     align-items: center;
     color: #fff;
-    font-weight: 400;
-    background: #98aeb6;
-    margin: 15px 0px 10px -35px;
-    padding: 10px 10px 10px 45px;
+    font-weight: 600;
+    background: linear-gradient(to left,pink,purple);
+    margin: 20px 0px 10px 4px;
+    padding: 10px 10px 10px 55px;
     min-height: 10px;
     border-radius: 22.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
@@ -84,7 +99,7 @@ li::before {
     left: 8px;
     width: 25px;
     height: 25px;
-    background: #333;
+    background: #000;
     border-radius: 50%;
 }
 
@@ -94,14 +109,16 @@ ul li .close {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
-    background: #333;
+    width: 27px;
+    height: 27px;
+    background: #000;
     border-radius: 50%;
 }
 
 ul li .close:hover {
-    background: #78787a;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
 
 }
 
@@ -125,26 +142,29 @@ ul li .close::after {
 
 ul li .edit {
     position: absolute;
-    right: 14px;
+    right: 12px;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 25px;
-    background: #333;
-    border-radius: 10px;
+    width: 50px;
+    height: 27px;
+    background: #000;
+    border-radius: 30px;
 }
 
 ul li .edit:hover {
-    background: #78787a;
+    /* background: #78787a; */
+    height: 30px;
+    width: 52px;
+    cursor: pointer;
+    border-radius: 30px;
 
 }
 
 .checked {
     color: #fff;
-    background: #965a6c;
-    ;
+    background: purple;
     text-decoration: none;
 }
 
@@ -158,4 +178,138 @@ ul li .edit:hover {
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: rotate(315deg);
+}
+
+@media only screen and (max-width: 988px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #date {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 70%;
+        margin-left: 2%;
+    }
+    button {
+        margin-left: 4%;
+        width: 20%;
+        margin-top: 3%;
+    }
+    
+
+
+
+    li {
+        width: 102%;
+        margin-left: -5%;
+    }
+
+    ul li .close,
+    ul li .edit {
+        margin-right: 12px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #date {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 60%;
+        margin-left: 2%;
+    }
+    button {
+        margin-left: 4%;
+        width: 30%;
+        margin-top: 3%;
+    }
+    
+
+
+
+    li {
+        width: 102%;
+        margin-left: -6%;
+    }
+
+    ul li .close,
+    ul li .edit {
+        margin-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #date {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 50%;
+        margin-left: 2%;
+    }
+    button {
+        margin-left: 4%;
+        width: 40%;
+        margin-top: 3%;
+    }
+    
+
+
+
+    li {
+        width: 102%;
+        margin-left: -6%;
+    }
+
+    ul li .close,
+    ul li .edit {
+        margin-right: 12px;
+    }
 }
